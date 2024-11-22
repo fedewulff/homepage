@@ -1,0 +1,88 @@
+@font-face {
+  font-family: letter;
+  src: url(./fonts/Roboto/Roboto-BoldItalic.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: letter;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.horizontal {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fullcontainer {
+  gap: 4rem;
+}
+.firstcontainer,
+.secondcontainer {
+  padding: 2rem;
+  max-width: 400px;
+  gap: 1.5rem;
+  border: 1px solid red;
+}
+.firstcontainer {
+  background-color: rgb(79, 157, 221);
+}
+
+.fedepic {
+  max-width: 350px;
+}
+.mypicture {
+  position: relative;
+}
+.myname {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 5%;
+}
+.aboutme {
+  gap: 1.5rem;
+}
+.icons {
+  gap: 2rem;
+}
+i {
+  font-size: 1.75rem;
+}
+.screenshot {
+  font-size: 4rem;
+  padding: 3rem;
+  text-align: center;
+  background: orange;
+}
+
+.fedepic,
+.square {
+  box-shadow: 3px 3px 10px rgb(71, 71, 71);
+}
+
+.project {
+  padding: 1.5rem 1rem 4rem 1rem;
+  gap: 1.5rem;
+}
+.projectnameicons {
+  justify-content: center;
+  gap: 8rem;
+  align-items: center;
+}
+
+.svg {
+  gap: 1.5rem;
+}
+
+.svg img {
+  width: 2rem;
+}
