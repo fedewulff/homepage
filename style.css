@@ -1,14 +1,30 @@
 @font-face {
-  font-family: letter;
-  src: url(./fonts/Roboto/Roboto-BoldItalic.ttf);
+  font-family: roboto;
+  src: url(./fonts/Roboto/Roboto-Light.ttf);
 }
-
+@font-face {
+  font-family: playfair;
+  src: url(./fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
 * {
   padding: 0;
   margin: 0;
-  font-family: letter;
+  font-family: roboto, "Courier New", Courier, monospace;
+  box-sizing: border-box;
 }
-
+.playfair,
+h3 {
+  font-family: playfair, "Courier New", Courier, monospace;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
 body {
   display: flex;
   justify-content: center;
@@ -19,28 +35,33 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .fullcontainer {
   gap: 4rem;
+  /* border: 1px solid greenyellow; */
+  width: 100svw;
 }
 .firstcontainer,
-.secondcontainer {
+.secondcontainer,
+.thirdcontainer {
   padding: 2rem;
-  max-width: 400px;
-  gap: 1.5rem;
-  border: 1px solid red;
+  /* max-width: 400px; */
+  gap: 3rem;
+  /* border: 1px solid red; */
 }
-.firstcontainer {
+
+.thirdcontainer {
   background-color: rgb(79, 157, 221);
+  color: azure;
 }
 
 .fedepic {
-  max-width: 350px;
+  max-width: 100%;
 }
 .mypicture {
   position: relative;
+  justify-content: center;
 }
 .myname {
   position: absolute;
@@ -58,8 +79,10 @@ i {
   font-size: 1.75rem;
 }
 .screenshot {
-  font-size: 4rem;
-  padding: 3rem;
+  font-size: 2.5rem;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
   text-align: center;
   background: orange;
 }
@@ -74,15 +97,54 @@ i {
   gap: 1.5rem;
 }
 .projectnameicons {
-  justify-content: center;
-  gap: 8rem;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
 }
-
 .svg {
   gap: 1.5rem;
 }
-
 .svg img {
   width: 2rem;
+}
+.project p {
+  font-size: 1.5rem;
+}
+
+.data {
+  gap: 0.2rem;
+}
+
+.center {
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  gap: 2rem; */
+}
+.square {
+  justify-content: center;
+}
+.skew {
+  background-color: rgb(79, 157, 221);
+  height: 25rem;
+  width: 100svw;
+  position: absolute;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(-15deg);
+}
+
+.project p,
+.data p {
+  font-size: 1.25rem;
+}
+.thirdcontainer > p,
+.aboutme p {
+  font-size: 1.5rem;
 }
