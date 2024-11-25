@@ -186,7 +186,6 @@ i {
     bottom: auto;
     left: auto;
     transform: translate(300px, -90px);
-
     width: 30rem;
     font-size: 3.25rem;
     text-align: end;
@@ -210,5 +209,56 @@ i {
   .icons1 {
     justify-content: center;
     padding: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .aboutme {
+    display: flex;
+    flex-direction: row;
+  }
+  .fedepic1 {
+    max-width: 100%;
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+  .federico {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: auto;
+    /* transform: translate(-40px, 0); */
+    /* transform: translate(0px, 0px); */
+    width: 100%;
+    font-size: 2.75rem;
+    text-align: center;
+    color: azure;
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+
+  .aboutmetitle {
+    padding: 3rem 1rem 0rem 1rem;
+    margin: 0;
+  }
+  .myintroduction {
+    padding: 1rem 3rem 3rem 1rem;
+
+    text-align: left;
+  }
+  .icons1 {
+    margin: 0;
+    margin-left: auto;
+  }
+  .mecont3 {
+    align-items: start;
+    justify-content: space-between;
+  }
+  .skew {
+    height: 40rem;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
   }
 }
