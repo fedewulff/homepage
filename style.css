@@ -21,7 +21,7 @@ h1 {
   font-size: 2.5rem;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 h3,
 .font150 {
@@ -145,6 +145,9 @@ i {
   transform-origin: top left;
   transform: skewY(-15deg);
 }
+.mecont3 {
+  gap: 1.25rem;
+}
 
 @media (min-width: 600px) {
   .grid {
@@ -175,6 +178,7 @@ i {
   }
   .wrap {
     float: left;
+    min-width: 45%;
     max-width: 45%;
     position: relative;
     margin-right: 1rem;
@@ -200,7 +204,7 @@ i {
   .aboutmetitle {
     /* text-align: end; */
 
-    padding: 4rem 5.25rem 3rem 0;
+    padding: 7rem 5.25rem 3.5rem 0;
   }
   .myintroduction {
     padding: 1rem;
@@ -209,6 +213,9 @@ i {
   .icons1 {
     justify-content: center;
     padding: 1rem;
+  }
+  .mecont3 {
+    display: inline;
   }
 }
 
@@ -227,8 +234,6 @@ i {
     right: auto;
     bottom: 0;
     left: auto;
-    /* transform: translate(-40px, 0); */
-    /* transform: translate(0px, 0px); */
     width: 100%;
     font-size: 2.75rem;
     text-align: center;
@@ -236,14 +241,15 @@ i {
     transform: scale(1.2);
     transform-origin: center;
   }
-
+  /* * {
+    border: 1px solid orange;
+  } */
   .aboutmetitle {
     padding: 3rem 1rem 0rem 1rem;
     margin: 0;
   }
   .myintroduction {
-    padding: 1rem 3rem 3rem 1rem;
-
+    padding: 0rem 3rem 1rem 1rem;
     text-align: left;
   }
   .icons1 {
@@ -251,14 +257,19 @@ i {
     margin-left: auto;
   }
   .mecont3 {
+    display: flex;
     align-items: start;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .skew {
     height: 40rem;
+    max-width: 1000px;
   }
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+  }
+  .fullcontainer {
+    max-width: 1000px;
   }
 }
